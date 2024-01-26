@@ -1,11 +1,11 @@
 import React from "react";
 import Rating from "../Rating/Rating";
 
-const Review = (data) => {
+const Review = ({data}) => {
 	return (
         
 		<div>
-        {data.data.map((item,index)=> (
+        {data.map((item,index)=> (
             <div key={index}>
             <div>
                 <img src={item.review.avatar} alt="Avatar"></img>
